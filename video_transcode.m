@@ -1,6 +1,6 @@
 % ffmpegへのpath(環境に合わせてpathを変える必要あり)
 %ffmpeg = "/opt/homebrew/bin/ffmpeg"; % macでhomebrewでインストールした場合
-ffmpeg  = "C:\ffmpeg\ffmpeg.exe"; % for Windows
+ffmpeg  = "C:\ffmpeg\bin\ffmpeg.exe"; % for Windows
 
 org_dir = pwd;
 
