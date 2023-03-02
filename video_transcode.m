@@ -13,7 +13,7 @@ data_folders = string(uipickfiles());
 
 for data_folder = data_folders
     cd(data_folder);
-    files = dir('*.MTS');
+    files = dir('*.m2ts');
     files = string({files.name});
     
     for f = files
@@ -25,6 +25,7 @@ for data_folder = data_folders
     end
 end
 
+%{
 for data_folder = data_folders
     cd(data_folder);
     files = dir('*.mp4');
@@ -46,6 +47,7 @@ for data_folder = data_folders
     movefile(outFile, "../");    
     delete("list.txt");
 end
+%}
 
 cd(org_dir);
 
